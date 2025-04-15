@@ -39,7 +39,7 @@ Aplikasi analisis sentimen untuk komentar YouTube, menggunakan machine learning 
 1. **Clone repositori**
 
    ```bash
-   git clone https://github.com/yourusername/youtube-sentiment-analysis.git
+   git clone https://github.com/mmararief/YT-Sentiment.git
    cd youtube-sentiment-analysis
    ```
 
@@ -83,6 +83,15 @@ Aplikasi analisis sentimen untuk komentar YouTube, menggunakan machine learning 
 
 1. **SVM dengan TF-IDF**: Model Support Vector Machine yang dilatih dengan data komentar dan menggunakan TF-IDF untuk ekstraksi fitur text.
 2. **VADER (Valence Aware Dictionary and sEntiment Reasoner)**: Model analisis sentimen berbasis leksikon yang khusus dikembangkan untuk teks media sosial.
+
+### Tentang File Model
+
+File model disimpan di repositori Git untuk memudahkan deployment. Model-model ini berlokasi di direktori `backend/models/`:
+
+- `best_model_svm_tfidf.pkl`: Model SVM terlatih (ukuran file ~10-20MB)
+- `tfidf_vectorizer.pkl`: Vectorizer yang digunakan bersama model SVM (ukuran file ~5-10MB)
+
+> Catatan: Jika Anda mengalami masalah dengan ukuran model yang terlalu besar untuk GitHub, lihat panduan lengkap di [UPLOADING_MODELS.md](./UPLOADING_MODELS.md) untuk opsi-opsi lainnya seperti Git LFS, cloud storage, atau GitHub Releases.
 
 ## Struktur Proyek
 

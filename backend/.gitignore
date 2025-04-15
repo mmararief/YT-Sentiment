@@ -50,12 +50,12 @@ venv.bak/
 # VSCode
 .vscode/
 
-# ML models
-models/*.pkl
+# ML models - Allowing specific models to be committed
+# models/*.pkl
 *.bin
 *.h5
 *.pt
 *.onnx
 
 # Ensure model directory exists but don't track large model files
-!models/.gitkeep 
+# !models/.gitkeep 

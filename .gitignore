@@ -60,7 +60,8 @@ nosetests.xml
 coverage.xml
 *.cover
 
-# ML models and large data files (unless tracked with Git LFS)
+# ML models and large data files (except our specific models)
+# We're allowing *.pkl files now
 *.bin
 *.h5
 *.pt
